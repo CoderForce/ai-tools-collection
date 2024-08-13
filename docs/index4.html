@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Collection</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        main {
+            padding: 40px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        ul.tools-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.tools-list li {
+            margin: 15px 0;
+            transition: transform 0.3s ease;
+        }
+
+        ul.tools-list li:hover {
+            transform: translateX(10px);
+        }
+
+        ul.tools-list li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #f8f9fa;
+        }
+
+        ul.tools-list li a:hover {
+            color: #0056b3;
+            background-color: #e9ecef;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background-color: #2a2a2a; color: #f0f0f0; }
+            main { background-color: #3a3a3a; }
+            h2 { color: #6abf69; border-bottom-color: #6abf69; }
+            ul.tools-list li a { background-color: #4a4a4a; color: #7fbaff; }
+            ul.tools-list li a:hover { background-color: #5a5a5a; color: #9dcaff; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My AI Tools Collection</h1>
+    </header>
+    <main>
+        <h2>国外工具</h2>
+        <ul class="tools-list">
+            <li><a href="https://chatgpt.com/c/0c69c9e1-b80e-4aef-a8e1-2103523196ad" target="_blank">ChatGPT by OpenAI</a></li>
+            <li><a href="https://claude.ai/chat/406ff6fd-2037-45b3-a28e-a23389225b6e" target="_blank">Claude</a></li>
+            <li><a href="https://aistudio.google.com/app/prompts/new_chat?hl=zh-cn" target="_blank">Google AI Studio</a></li>
+            <li><a href="https://gemini.google.com/app" target="_blank">Gemini</a></li>
+            <li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a></li>
+            <li><a href="https://www.perplexity.ai/" target="_blank">Perplexity AI</a></li>
+        </ul>
+        
+        <h2>国内工具</h2>
+        <ul class="tools-list">
+            <li><a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a></li>
+            <li><a href="https://qianwen.aliyun.com/qianwen/?sessionId=92eb009befae43348de2c864a34624d4" target="_blank">通义千问 - 阿里</a></li>
+            <li><a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a></li>
+            <li><a href="https://kimi.moonshot.cn/" target="_blank">Kimi</a></li>
+        </ul>
+
+        <h2>可上传文件的AI工具</h2>
+        <ul class="tools-list">
+            <li><a href="https://chatgpt.com/c/0c69c9e1-b80e-4aef-a8e1-2103523196ad" target="_blank">ChatGPT by OpenAI</a></li>
+            <li><a href="https://claude.ai/chat/406ff6fd-2037-45b3-a28e-a23389225b6e" target="_blank">Claude</a></li>
+            <li><a href="https://aistudio.google.com/app/prompts/new_chat?hl=zh-cn" target="_blank">Google AI Studio</a></li>
+            <li><a href="https://gemini.google.com/app" target="_blank">Gemini</a></li>
+            <li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a></li>
+            <li><a href="https://www.perplexity.ai/" target="_blank">Perplexity AI</a></li>
+            <li><a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a></li>
+            <li><a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a></li>
+            <li><a href="https://kimi.moonshot.cn/" target="_blank">Kimi</a></li>
+        </ul>
+
+        <h2>生成图片的AI工具</h2>
+        <ul class="tools-list">
+            <li><a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a></li>
+            <li><a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a></li>
+            <li><a href="https://qianwen.aliyun.com/qianwen/?sessionId=92eb009befae43348de2c864a34624d4" target="_blank">通义千问 - 阿里</a></li>
+            <li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>© 2024 My AI Tools Collection</p>
+    </footer>
+</body>
+</html>

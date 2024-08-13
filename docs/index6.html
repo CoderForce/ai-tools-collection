@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .tool-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+            transition: transform 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f4f8;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background-color: #1a1a1a; color: #f0f0f0; }
+            .tool-section { background-color: #2a2a2a; }
+            a { background-color: #333; color: #f0f0f0; }
+            a:hover { background-color: #4CAF50; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My AI Tools Collection</h1>
+    </header>
+    <main>
+        <div class="tool-section">
+            <h2>International AI Tools</h2>
+            <ul id="international-tools-list">
+                <li><a href="https://chatgpt.com/c/0c69c9e1-b80e-4aef-a8e1-2103523196ad" target="_blank">ChatGPT by OpenAI</a></li>
+                <li><a href="https://claude.ai/chat/406ff6fd-2037-45b3-a28e-a23389225b6e" target="_blank">Claude</a></li>
+                <li><a href="https://aistudio.google.com/app/prompts/new_chat?hl=zh-cn" target="_blank">Google AI Studio</a></li>
+                <li><a href="https://gemini.google.com/app" target="_blank">Gemini</a></li>
+                <li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a></li>
+            </ul>
+        </div>
+        
+        <div class="tool-section">
+            <h2>Domestic AI Tools</h2>
+            <ul id="domestic-tools-list">
+                <li><a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a></li>
+                <li><a href="https://qianwen.aliyun.com/qianwen/?sessionId=92eb009befae43348de2c864a34624d4" target="_blank">通义千问 - 阿里</a></li>
+                <li><a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a></li>
+                <li><a href="https://kimi.moonshot.cn/" target="_blank">Kimi</a></li>
+            </ul>
+        </div>
+        
+        <div class="tool-section">
+            <h2>AI Tools with File Upload</h2>
+            <ul id="file-upload-tools-list">
+                <li><a href="https://chatgpt.com/c/0c69c9e1-b80e-4aef-a8e1-2103523196ad" target="_blank">ChatGPT by OpenAI</a></li>
+                <li><a href="https://claude.ai/chat/406ff6fd-2037-45b3-a28e-a23389225b6e" target="_blank">Claude</a></li>
+                <li><a href="https://aistudio.google.com/app/prompts/new_chat?hl=zh-cn" target="_blank">Google AI Studio</a></li>
+                <li><a href="https://gemini.google.com/app" target="_blank">Gemini</a></li>
+                <li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a></li>
+                <li><a href="https://www.perplexity.ai/" target="_blank">Perplexity AI</a></li>
+                <li><a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a></li>
+                <li><a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a></li>
+                <li><a href="https://kimi.moonshot.cn/" target="_blank">Kimi</a></li>
+            </ul>
+        </div>
+
+        <div class="tool-section">
+            <h2>AI Tools for Generating Images</h2>
+            <ul id="image-generation-tools-list">
+                <li><a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a></li>
+                <li><a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a></li>
+                <li><a href="https://qianwen.aliyun.com/qianwen/?sessionId=92eb009befae43348de2c864a34624d4" target="_blank">通义千问 - 阿里</a></li>
+                <li><a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 My AI Tools Collection</p>
+    </footer>
+</body>
+</html>
