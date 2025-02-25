@@ -1,4 +1,4 @@
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -189,6 +189,363 @@
             <h2>Generative music</h2>
             <ul id="image-generation-tools-list">
                 <li><a href="https://stableaudio.com/generate" target="_blank">Stability AI</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 My AI Tools Collection</p>
+    </footer>
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .tool-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+            transition: transform 0.2s ease;
+            position: relative;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f4f8;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        /* 工具提示样式 */
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 250px;
+            background-color: rgba(0, 0, 0, 0.85);
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s, visibility 0.3s;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1.5;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            pointer-events: none;
+        }
+
+        .tooltip .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            
+            .tooltip .tooltip-text {
+                width: 90%;
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background-color: #1a1a1a; color: #f0f0f0; }
+            .tool-section { background-color: #2a2a2a; }
+            a { background-color: #333; color: #f0f0f0; }
+            a:hover { background-color: #4CAF50; }
+            .tooltip .tooltip-text { background-color: rgba(80, 80, 80, 0.95); }
+            .tooltip .tooltip-text::after { border-color: rgba(80, 80, 80, 0.95) transparent transparent transparent; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Tools Collection</h1>
+    </header>
+    <main>
+        <div class="tool-section">
+            <h2>International AI Tools</h2>
+            <ul id="international-tools-list">
+                <li class="tooltip">
+                    <a href="https://chatgpt.com/c/0c69c9e1-b80e-4aef-a8e1-2103523196ad" target="_blank">ChatGPT by OpenAI</a>
+                    <span class="tooltip-text">OpenAI的对话式AI模型，支持多种功能，包括文本生成、代码编写、分析数据和回答问题。提供免费和付费版本，是目前最流行的AI对话工具之一。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://claude.ai/chat/406ff6fd-2037-45b3-a28e-a23389225b6e" target="_blank">Claude</a>
+                    <span class="tooltip-text">由Anthropic开发的智能AI助手，擅长长文档分析和处理，拥有更自然的对话能力和更少的幻觉问题。支持文件上传和处理功能。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://aistudio.google.com/app/prompts/new_chat?hl=zh-cn" target="_blank">Google AI Studio</a>
+                    <span class="tooltip-text">Google的AI开发平台，允许用户创建和测试自定义的AI模型提示，提供多种Google AI模型访问，同时支持API集成到应用中。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://gemini.google.com/app" target="_blank">Gemini</a>
+                    <span class="tooltip-text">Google的多模态AI助手，支持文本、图像和音频输入，可以分析复杂数据，为各种任务提供帮助。提供免费和Pro版本，结合了Google搜索能力。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a>
+                    <span class="tooltip-text">微软的AI助手，集成于Bing搜索引擎，提供实时搜索结果和AI生成的回答。支持图像生成和网页分析功能，可以参考互联网最新信息回答问题。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://grok.com/?referrer=website" target="_blank">X-Grok</a>
+                    <span class="tooltip-text">由X公司(前Twitter)开发的AI助手，特点是具有幽默感和实时网络访问能力。相比其他AI更加直接和开放，能够回答敏感或有争议性的问题。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://chat.lmsys.org/" target="_blank">Model Comparison - LMSYS</a>
+                    <span class="tooltip-text">LMSYS组织开发的AI模型比较平台，可以同时测试和比较多个开源和闭源AI模型的表现。对研究人员和开发者特别有用，可以评估不同模型的能力。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://chat.mistral.ai/chat/f897b005-177e-4897-89b0-aca46d0fabe3" target="_blank">Mistral Large 2 - Mistral AI</a>
+                    <span class="tooltip-text">Mistral AI开发的大型语言模型，擅长代码生成、多语言支持和专业领域知识。特点是高效的性能和开放的API访问，支持微调和自定义部署。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://www.midjourney.com/" target="_blank">Midjourney AI</a>
+                    <span class="tooltip-text">专注于AI图像生成的工具，能根据文本描述创建高质量艺术作品。通过Discord使用，支持各种艺术风格和详细的图像控制参数，广受艺术家和设计师欢迎。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://www.perplexity.ai/" target="_blank">perplexity AI</a>
+                    <span class="tooltip-text">结合搜索引擎和AI的问答工具，提供带有源引用的实时信息。特点是直接引用网络来源，回答更可靠，适合需要最新信息的研究和学习。</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="tool-section">
+            <h2>Domestic AI Tools</h2>
+            <ul id="domestic-tools-list">
+                <li class="tooltip">
+                    <a href=" https://chat.deepseek.com/" target="_blank">Deepseek</a>
+                    <span class="tooltip-text">国内领先的AI研究公司开发的大语言模型，特别擅长代码生成和技术领域问题解答。支持中英文双语能力，针对科研和开发者场景优化。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a>
+                    <span class="tooltip-text">科大讯飞推出的大语言模型，具有强大的中文理解能力和知识储备。支持多模态输入和文件上传，在教育、医疗和客服领域有专业优化。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://chatglm.cn/main/alltoolsdetail" target="_blank">智谱清言 - 智谱AI</a>
+                    <span class="tooltip-text">基于ChatGLM开发的对话式AI助手，提供文本生成、知识问答和多种专业领域能力。具有良好的中文语境理解，支持插件和工具调用功能。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://chat.qwenlm.ai/" target="_blank">QWEN CHAT - 阿里</a>
+                    <span class="tooltip-text">阿里云开发的通义千问系列大语言模型的独立版本，擅长解决中文语境下的各种任务。支持文本、代码和多种知识领域问答，提供开源和云端版本。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a>
+                    <span class="tooltip-text">百度推出的多模态大语言模型，支持文本、图像生成和理解。结合百度搜索能力，提供实时信息和知识服务，在中文理解和创作方面表现出色。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://www.doubao.com/chat/125089088469250" target="_blank">豆包 - 字节跳动</a>
+                    <span class="tooltip-text">字节跳动推出的AI助手，专注于创意写作和内容生成。支持多种文本风格转换，拥有丰富的模板库，适合社交媒体内容创作和文案撰写。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://ying.baichuan-ai.com/chat?sid=6202552" target="_blank">百小应 - 搜狗</a>
+                    <span class="tooltip-text">百川智能推出的大语言模型，特点是快速响应和精确的信息提供。支持多轮对话和知识推理，在通用问答和专业领域知识方面均有良好表现。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://yuanbao.tencent.com/chat/naQivTmsDa" target="_blank">腾讯元宝 - 腾讯</a>
+                    <span class="tooltip-text">腾讯推出的AI助手，整合了腾讯多年的AI技术积累。支持文本生成、创意写作和专业问答，具有良好的安全性和隐私保护机制。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://kimi.moonshot.cn/" target="_blank">Kimi</a>
+                    <span class="tooltip-text">由月之暗面团队开发的AI助手，特点是强大的长文档处理能力和知识整合能力。支持上传各种格式文件进行分析，在学术研究和信息整理方面表现突出。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://mychandler.bet/chat" target="_blank">chandlerAI</a>
+                    <span class="tooltip-text">一款年轻且快速迭代的国内AI助手，注重用户体验和个性化回答。提供免费访问多种高级模型的能力，支持多种创意和专业任务。</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="tool-section">
+            <h2>AI Tools with File Upload</h2>
+            <ul id="file-upload-tools-list">
+                <li class="tooltip">
+                    <a href="https://chatgpt.com/c/0c69c9e1-b80e-4aef-a8e1-2103523196ad" target="_blank">ChatGPT by OpenAI</a>
+                    <span class="tooltip-text">支持多种文件格式上传，包括PDF、DOC、图片等。能够分析文档内容，提取信息，回答相关问题，并支持代码文件分析和调试。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://claude.ai/chat/406ff6fd-2037-45b3-a28e-a23389225b6e" target="_blank">Claude</a>
+                    <span class="tooltip-text">支持大型文档上传和分析，文件大小限制高达10MB。擅长处理PDF、Word文档和Excel表格，可以进行深度文本分析和数据提取。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://aistudio.google.com/app/prompts/new_chat?hl=zh-cn" target="_blank">Google AI Studio</a>
+                    <span class="tooltip-text">支持图像和文档上传功能，能够分析图片内容并基于文档进行问答。利用Google强大的多模态模型提供准确的内容理解和分析。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://gemini.google.com/app" target="_blank">Gemini</a>
+                    <span class="tooltip-text">支持多种文件格式和图像上传，Pro版本允许更大的文件和更多的上传次数。能够理解图像内容，分析数据表格和处理各类文档。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a>
+                    <span class="tooltip-text">支持图像上传和分析功能，能够识别图片内容并回答相关问题。还可以分析网页内容，提供基于特定页面的信息提取和总结。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://www.perplexity.ai/" target="_blank">Perplexity AI</a>
+                    <span class="tooltip-text">支持PDF和其他文档上传，Pro版本提供更强大的文件处理功能。能够结合文档内容和网络搜索，提供更全面的信息分析和答案。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://chat.lmsys.org/" target="_blank">Model Comparison - LMSYS</a>
+                    <span class="tooltip-text">支持部分模型的图像上传功能，允许用户测试不同AI模型对相同图像或文件的处理能力。适合研究人员比较多个模型的性能。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a>
+                    <span class="tooltip-text">支持多种文档格式上传，包括PDF、Word、Excel等。能够理解中文文档内容，提取关键信息，并基于文档内容回答问题和生成摘要。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a>
+                    <span class="tooltip-text">支持文档和图像上传，能够分析各类文件内容。结合百度知识图谱，提供文档内容的深度理解和专业领域知识补充。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://kimi.moonshot.cn/" target="_blank">Kimi</a>
+                    <span class="tooltip-text">拥有业内领先的文档处理能力，支持单次上传多个大型文件。擅长处理学术论文、研究报告和技术文档，提供精确的内容理解和信息提取。</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tool-section">
+            <h2>AI Tools for Generating Images</h2>
+            <ul id="image-generation-tools-list">
+                <li class="tooltip">
+                    <a href="https://xinghuo.xfyun.cn/desk" target="_blank">讯飞星火 - 科大讯飞</a>
+                    <span class="tooltip-text">提供中文优化的AI图像生成功能，支持多种艺术风格和场景描述。特别适合中文提示词，能理解中国文化元素和细微的中文表达。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://yiyan.baidu.com/" target="_blank">文心一言 - 百度</a>
+                    <span class="tooltip-text">百度的图像生成功能强大，支持精确的风格控制和场景描述。特别擅长中国传统艺术风格和现代设计风格的结合，生成质量高且速度快。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://qianwen.aliyun.com/qianwen/?sessionId=92eb009befae43348de2c864a34624d4" target="_blank">通义千问 - 阿里</a>
+                    <span class="tooltip-text">阿里的图像生成AI，结合了深度学习和计算机视觉技术。支持多种创意风格，适合营销素材、产品设计和艺术创作，同时兼顾商业实用性。</span>
+                </li>
+                <li class="tooltip">
+                    <a href="https://www.bing.com/search?q=Bing+AI&showconv=1" target="_blank">Bing (Copilot)</a>
+                    <span class="tooltip-text">微软基于DALL-E模型的图像生成功能，内置于Bing搜索。生成速度快，质量高，支持详细的提示词控制和多种艺术风格，免费用户每天有限额。</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="tool-section">
+            <h2>Generative music</h2>
+            <ul id="music-generation-tools-list">
+                <li class="tooltip">
+                    <a href="https://stableaudio.com/generate" target="_blank">Stability AI</a>
+                    <span class="tooltip-text">由Stability AI开发的音乐生成工具，能根据文本描述创作原创音乐。支持多种音乐风格、情绪和乐器组合，可以生成高质量的背景音乐、电影配乐和氛围音效。</span>
+                </li>
             </ul>
         </div>
     </main>
